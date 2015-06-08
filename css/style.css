@@ -1,3 +1,6 @@
+@import "http://fonts.googleapis.com/css?family=Oswald:400,700,300";
+/* font */
+/* font end */
 /* margin padding */
 /* margin padding end */
 /* width */
@@ -39,6 +42,7 @@ body {
   .header .nav-link {
     color: #ffffff;
     display: inline-block;
+    font-family: "arial";
     font-size: 20px;
     height: 50px;
     line-height: 50px;
@@ -78,13 +82,29 @@ body {
 /* container end */
 /* left colum css */
 .content-col {
+  color: #ffffff;
   display: inline-block;
   vertical-align: middle;
-  width: 495px;
-  color: #ffffff; }
+  width: 515px; }
 
-.cotent-colum {
-  background: rgba(0, 0, 0, 0.5); }
+.content-heading {
+  background: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  font-size: 50px;
+  margin-bottom: 30px;
+  padding: 5px 8px;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-weight: normal; }
+
+.content-para {
+  background: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 15px;
+  padding: 10px 5px;
+  font-family: "arial"; }
 
 /* left colum css end */
 /* right colum css */
@@ -105,29 +125,31 @@ body {
   border: solid 3px;
   bottom: -68px;
   color: #ffffff;
-  font-size: 50px;
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
   height: 72px;
   left: 72px;
-  line-height: 72px;
+  line-height: 64px;
   position: absolute;
   text-transform: uppercase;
   width: 206px; }
 
 .button-orange {
-  border-color: #cc6600;
-  background-color: #ff9900; }
+  background-color: #ff9900;
+  border-color: #cc6600; }
 
 .button-blue {
-  border-color: #0197b2;
-  background-color: #02c7e6; }
+  background-color: #02c7e6;
+  border-color: #0197b2; }
 
 .button-green {
-  border-color: #719d18;
-  background-color: #8db737; }
+  background-color: #8db737;
+  border-color: #719d18; }
 
 .button-red {
-  border-color: #a20303;
-  background-color: #cc0000; }
+  background-color: #cc0000;
+  border-color: #a20303; }
 
 /* right colum css end */
 

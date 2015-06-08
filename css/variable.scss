@@ -1,3 +1,7 @@
+/* font */
+$oswald-font: 'Oswald', sans-serif;
+$arial-font: 'arial';
+/* font end */
 /* margin padding */
 $mar: 10px;
 $padn: 10px;
@@ -51,28 +55,35 @@ $v-middle: middle;
   border: solid 3px;
   bottom: -68px;
   color: $white;
-  font-size: $fsize * 5;
+  font-family: $oswald-font;
+  font-size: $fsize * 3;
+  font-weight: bold;
   height: 72px;
   left: 72px;
-  line-height: 72px;
+  line-height: 64px;
   position: $pos-abs;
   text-transform: uppercase;
   width: 206px;
 }
 @mixin btn-orange {
-  border-color: $dark-orange;
   background-color: $orange;
+  border-color: $dark-orange;
 }
 @mixin btn-blue {
-  border-color: $dark-blue;
   background-color: $blue;
+  border-color: $dark-blue;
 }
 @mixin btn-green {
-  border-color: $dark-green;
   background-color: $green;
+  border-color: $dark-green;
 }
 @mixin btn-red {
-  border-color: $dark-red;
   background-color: $red;
+  border-color: $dark-red;
 }
 /* button mixin end  */
+
+@mixin content-colum {
+  background: $rgba-z-black;
+  color: $white;
+}

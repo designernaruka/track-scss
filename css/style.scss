@@ -1,3 +1,4 @@
+@import "http://fonts.googleapis.com/css?family=Oswald:400,700,300";
 @import "variable";
 
 body{
@@ -30,6 +31,7 @@ body{
 		.nav-link {
 			color: $white;
 			display: $in-block;
+			font-family: $arial-font;
 			font-size: $fsize * 2;
 			height: 50px;
 			line-height: 50px;
@@ -73,13 +75,27 @@ body{
 
 /* left colum css */
 	.content-col {
+		color: $white; 
 		display: $in-block;
 		vertical-align: $v-middle;
-		width: 495px;
-		color: $white; 
+		width: 515px;
 	}
-	.cotent-colum {
-		background: $rgba-z-black;
+	.content-heading {
+		@include content-colum;
+		font-size: $fsize * 5;
+		margin-bottom: $mar * 3; 
+		padding: $padn - 5 $padn - 2;
+		text-align: center;
+	  font-family: $oswald-font;
+	  font-weight: normal;
+	}
+	.content-para {
+		@include content-colum;
+		font-size: $fsize * 2;
+		font-weight: normal;
+		margin-bottom: $mar + 5;
+		padding: $padn $padn - 5;
+	  font-family: $arial-font;
 	}
 /* left colum css end */
 
