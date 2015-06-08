@@ -108,6 +108,9 @@ body{
 		position: $pos-relative;
 		vertical-align: $v-middle;
 		width: 360px;
+		&:focus {
+			outline: none;
+		}
 	}
 	.button {
 		@include common-button;

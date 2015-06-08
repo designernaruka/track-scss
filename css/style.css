@@ -116,6 +116,8 @@ body {
   position: relative;
   vertical-align: middle;
   width: 360px; }
+  .button-col:focus {
+    outline: none; }
 
 .button {
   -moz-border-radius: 8px;
@@ -125,6 +127,7 @@ body {
   border: solid 3px;
   bottom: -68px;
   color: #ffffff;
+  cursor: pointer;
   font-family: "Oswald", sans-serif;
   font-size: 30px;
   font-weight: bold;
