@@ -1,0 +1,111 @@
+@import "variable";
+
+body{
+	margin: $mar * 0;
+	padding: $padn * 5 0 0 0;  
+}
+
+/* common css */
+.float-left {
+	float: $float-left;
+}
+.float-right {
+	float: $float-right;
+}
+/* common css end */
+
+/* header css */
+	.header {
+		background-color: $black;
+		color: $white;
+		position: $pos-fixed;
+		top: 0px;
+		width: $width-full;
+		z-index: 9999;
+		.nav {
+			margin: 0 auto;
+			text-align: center;
+			width: 960px;
+		}
+		.nav-link {
+			color: $white;
+			display: $in-block;
+			font-size: $fsize * 2;
+			height: 50px;
+			line-height: 50px;
+			padding: 0 $padn + 5;
+			text-decoration: none;
+			&:hover {
+				background-color: $white;
+				color: $red;
+			}
+		}
+	}
+/* header css end */
+
+/* row and content slide */
+	.slide {
+		background-attachment: $pos-fixed;
+		background-size: cover;
+		min-height: 430px;
+		padding: $padn * 13 0 $padn * 19 0;
+		width: $width-full;
+	}
+	.slide-one {
+		background-image: url( ../images/bg-slide-one.jpg);
+	}
+	.slide-two {
+		background-image: url( ../images/bg-slide-two.jpg);
+	}
+	.slide-three {
+		background-image: url( ../images/bg-slide-three.jpg);
+	}
+	.slide-four {
+		background-image: url( ../images/bg-slide-four.jpg);
+	}
+/* row and content slide end */
+/* container */
+	.container {
+		margin: $mar * 0 auto;
+		width: 950px;
+	}
+/* container end */
+
+/* left colum css */
+	.content-col {
+		display: $in-block;
+		vertical-align: $v-middle;
+		width: 495px;
+		color: $white; 
+	}
+	.cotent-colum {
+		background: $rgba-z-black;
+	}
+/* left colum css end */
+
+/* right colum css */
+	.button-col {
+		background-image: url( ../images/bg-button-tree.png);
+		display: $in-block;
+		height: 100%;
+		min-height: 335px;
+		position: $pos-relative;
+		vertical-align: $v-middle;
+		width: 360px;
+	}
+	.button {
+		@include common-button;
+	}
+	.button-orange {
+		@include btn-orange;
+	}
+	.button-blue {
+		@include btn-blue;
+	}
+	.button-green {
+		@include btn-green;
+	}
+	.button-red {
+		@include btn-red;
+	}
+/* right colum css end */

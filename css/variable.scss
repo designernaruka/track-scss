@@ -1,0 +1,78 @@
+/* margin padding */
+$mar: 10px;
+$padn: 10px;
+/* margin padding end */
+
+/* width */
+$width-full: 100vw;
+$width-full-p: 100%;
+/* width end */
+
+/* color */
+$rgba-z-black: rgba(0,0,0,0.5);
+$black: #231f21;
+$white: #ffffff;
+$dark-orange: #cc6600;
+$orange: #ff9900;
+$dark-blue: #0197b2;
+$blue: #02c7e6;
+$dark-green: #719d18;
+$green: #8db737;
+$dark-red: #a20303;
+$red: #cc0000;
+/* color end */
+
+/* position */
+$pos-fixed: fixed;
+$pos-relative: relative;
+$pos-abs: absolute;
+/* position end */
+
+/* font size */
+$fsize: 10px;
+/* font size end */
+
+/* display and float and align */
+$in-block: inline-block;
+$float-left: left;
+$float-right: right;
+$v-middle: middle;
+/* display end */
+
+/* button mixin */
+@mixin border-radius($radius) {
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+}
+@mixin common-button {
+  @include border-radius(8px);
+  border: solid 3px;
+  bottom: -68px;
+  color: $white;
+  font-size: $fsize * 5;
+  height: 72px;
+  left: 72px;
+  line-height: 72px;
+  position: $pos-abs;
+  text-transform: uppercase;
+  width: 206px;
+}
+@mixin btn-orange {
+  border-color: $dark-orange;
+  background-color: $orange;
+}
+@mixin btn-blue {
+  border-color: $dark-blue;
+  background-color: $blue;
+}
+@mixin btn-green {
+  border-color: $dark-green;
+  background-color: $green;
+}
+@mixin btn-red {
+  border-color: $dark-red;
+  background-color: $red;
+}
+/* button mixin end  */
